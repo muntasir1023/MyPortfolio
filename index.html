@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Muntasir Hasan | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muntasir Hasan | Entrepreneur & Developer</title>
 
-<!-- Tailwind CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
-
-<!-- AOS Animation -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
@@ -21,180 +16,231 @@ body { font-family: 'Poppins', sans-serif; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.glow {
-  box-shadow: 0 0 25px rgba(99,102,241,0.4);
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.glow:hover {
+  box-shadow: 0 0 25px rgba(99,102,241,0.6);
+  transform: translateY(-5px);
+}
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, #6366f1, #06b6d4);
+  z-index: 100;
 }
 </style>
 </head>
 
 <body class="bg-gray-950 text-gray-200 scroll-smooth">
 
+<div id="progress"></div>
+
 <!-- NAVBAR -->
-<nav class="fixed w-full bg-gray-900/70 backdrop-blur z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold gradient-text">Muntasir Hasan</h1>
+<nav class="fixed w-full bg-gray-900/60 backdrop-blur z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-xl gradient-text">Muntasir Hasan</h1>
     <div class="space-x-6 hidden md:flex">
       <a href="#about" class="hover:text-indigo-400">About</a>
       <a href="#experience" class="hover:text-indigo-400">Experience</a>
       <a href="#skills" class="hover:text-indigo-400">Skills</a>
       <a href="#achievements" class="hover:text-indigo-400">Achievements</a>
+      <a href="#languages" class="hover:text-indigo-400">Languages</a>
       <a href="#contact" class="hover:text-indigo-400">Contact</a>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="h-screen flex items-center justify-center text-center px-6">
+<section class="h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
   <div data-aos="fade-up">
-    <h2 class="text-4xl md:text-6xl font-extrabold mb-6">
-      I'm <span class="gradient-text">Muntasir Hasan</span>
+    <h2 class="text-5xl md:text-7xl font-extrabold mb-6">
+      <span class="gradient-text">Muntasir Hasan</span>
     </h2>
-    <h3 class="text-xl md:text-2xl text-gray-400 mb-4">
+    <h3 class="text-xl md:text-2xl text-gray-400 mb-6">
       <span id="typing"></span>
     </h3>
     <p class="max-w-2xl mx-auto text-gray-400">
-      Young entrepreneur and tech–business hybrid building scalable businesses through technology, branding, and data-driven strategy.
+      Founder & CEO of VARENO Events BD | Managing Director of Bangladesh Rising Foundation | Tech–Business Hybrid Builder
     </p>
-    <div class="mt-8">
-      <a href="#contact" class="px-8 py-3 bg-indigo-600 rounded-full glow hover:bg-indigo-700 transition">
-        Let's Connect
+
+    <div class="mt-10 flex flex-wrap justify-center gap-6">
+      <a href="https://wa.me/8801303313212" target="_blank"
+         class="group glass px-8 py-3 rounded-full transition duration-300 hover:scale-105">
+         <span class="gradient-text font-semibold">WhatsApp</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/muntasirhasan1023" target="_blank"
+         class="group glass px-8 py-3 rounded-full transition duration-300 hover:scale-105">
+         <span class="gradient-text font-semibold">LinkedIn</span>
+      </a>
+
+      <a href="https://github.com/muntasir1023/MyPortfolio/raw/main/Muntasir%20Hasan%20CV.pdf" target="_blank"
+         class="group bg-gradient-to-r from-indigo-500 to-cyan-500 px-8 py-3 rounded-full transition duration-300 hover:scale-105">
+         <span class="font-semibold">Download CV</span>
       </a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-20 bg-gray-900 px-6">
+<section id="about" class="py-24 px-6 bg-gray-900">
   <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
     <h2 class="text-3xl font-bold gradient-text mb-6">Professional Summary</h2>
     <p class="text-gray-400 leading-relaxed">
-      Founder & CEO of VARENO Events BD and Managing Director of Bangladesh Rising Foundation.
-      3+ years in front-end development, digital advertising, and operations management.
-      Competitive public speaker and debate champion with proven leadership record.
+      19-year-old entrepreneur and tech–business hybrid with over three years of experience in front-end development, digital advertising, and operational management. Founder & CEO of VARENO Events BD and Managing Director of Bangladesh Rising Foundation, combining strategic leadership with hands-on technical execution. Demonstrated excellence in public speaking, competitive debate, and institutional leadership roles. Focused on building scalable ventures through branding, technology, and data-driven business strategy.
     </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mt-16 text-center">
+    <div class="glass p-6 rounded-xl" data-aos="zoom-in">
+      <h3 class="text-4xl font-bold gradient-text counter" data-target="3">0</h3>
+      <p class="text-gray-400">Years Experience</p>
+    </div>
+    <div class="glass p-6 rounded-xl" data-aos="zoom-in">
+      <h3 class="text-4xl font-bold gradient-text counter" data-target="9">0</h3>
+      <p class="text-gray-400">Speech Titles</p>
+    </div>
+    <div class="glass p-6 rounded-xl" data-aos="zoom-in">
+      <h3 class="text-4xl font-bold gradient-text counter" data-target="4">0</h3>
+      <p class="text-gray-400">Debate Championships</p>
+    </div>
+    <div class="glass p-6 rounded-xl" data-aos="zoom-in">
+      <h3 class="text-4xl font-bold gradient-text counter" data-target="2">0</h3>
+      <p class="text-gray-400">Best Speaker Awards</p>
+    </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center gradient-text mb-12" data-aos="fade-up">Professional Experience</h2>
+<section id="experience" class="py-24 px-6">
+  <h2 class="text-3xl font-bold text-center gradient-text mb-16" data-aos="fade-up">
+    Professional Experience
+  </h2>
 
-    <div class="grid md:grid-cols-2 gap-8">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <div class="glass p-6 rounded-xl glow transition" data-aos="fade-right">
+      <h3 class="text-xl font-semibold">Founder & CEO – VARENO Events BD</h3>
+      <p class="text-gray-400 mt-3">
+        Lead branding strategy, digital campaigns, client acquisition, and operational growth planning.
+      </p>
+    </div>
 
-      <div class="bg-gray-900 p-6 rounded-xl glow" data-aos="fade-right">
-        <h3 class="text-xl font-semibold">Founder & CEO – VARENO Events BD</h3>
-        <ul class="mt-4 text-gray-400 list-disc list-inside">
-          <li>Lead branding & client strategy</li>
-          <li>Direct digital campaigns</li>
-          <li>Manage business growth planning</li>
-        </ul>
-      </div>
+    <div class="glass p-6 rounded-xl glow transition" data-aos="fade-left">
+      <h3 class="text-xl font-semibold">Managing Director – Bangladesh Rising Foundation</h3>
+      <p class="text-gray-400 mt-3">
+        Oversee execution of social initiatives and manage cross-functional coordination.
+      </p>
+    </div>
 
-      <div class="bg-gray-900 p-6 rounded-xl glow" data-aos="fade-left">
-        <h3 class="text-xl font-semibold">Managing Director – Bangladesh Rising Foundation</h3>
-        <ul class="mt-4 text-gray-400 list-disc list-inside">
-          <li>Oversee project execution</li>
-          <li>Lead community initiatives</li>
-        </ul>
-      </div>
-
-      <div class="bg-gray-900 p-6 rounded-xl glow" data-aos="fade-right">
-        <h3 class="text-xl font-semibold">Front-End Developer & UI/UX Designer</h3>
-        <ul class="mt-4 text-gray-400 list-disc list-inside">
-          <li>HTML, CSS, JavaScript, Tailwind</li>
-          <li>Figma UI Prototypes</li>
-        </ul>
-      </div>
-
-      <div class="bg-gray-900 p-6 rounded-xl glow" data-aos="fade-left">
-        <h3 class="text-xl font-semibold">Digital Advertising Specialist</h3>
-        <ul class="mt-4 text-gray-400 list-disc list-inside">
-          <li>Meta Ads Manager</li>
-          <li>Google Analytics</li>
-        </ul>
-      </div>
-
+    <div class="glass p-6 rounded-xl glow transition" data-aos="fade-right">
+      <h3 class="text-xl font-semibold">Front-End Developer & Digital Strategist</h3>
+      <p class="text-gray-400 mt-3">
+        Built responsive interfaces and executed paid media campaigns with performance tracking.
+      </p>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="py-20 bg-gray-900 px-6">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold gradient-text mb-12" data-aos="fade-up">Technical Skills</h2>
-
-    <div class="flex flex-wrap justify-center gap-6 text-lg">
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">HTML</span>
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">CSS</span>
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">JavaScript</span>
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">Tailwind CSS</span>
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">Figma</span>
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">Meta Ads</span>
-      <span class="bg-indigo-600 px-6 py-2 rounded-full glow">Google Analytics</span>
-    </div>
+<section id="skills" class="py-24 bg-gray-900 px-6">
+  <h2 class="text-3xl font-bold text-center gradient-text mb-16" data-aos="fade-up">Technical Skills</h2>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 text-center">
+    <div class="glass p-6 rounded-xl glow">HTML / CSS / JS</div>
+    <div class="glass p-6 rounded-xl glow">Tailwind CSS</div>
+    <div class="glass p-6 rounded-xl glow">Figma UI/UX</div>
+    <div class="glass p-6 rounded-xl glow">Meta Ads Manager</div>
+    <div class="glass p-6 rounded-xl glow">Google Analytics</div>
+    <div class="glass p-6 rounded-xl glow">Operational Strategy</div>
   </div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section id="achievements" class="py-20 px-6">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center gradient-text mb-12" data-aos="fade-up">
-      Leadership & Achievements
-    </h2>
-
-    <div class="grid md:grid-cols-2 gap-6 text-gray-400">
-      <div data-aos="fade-right">🥇 9× Extempore Speech Champion</div>
-      <div data-aos="fade-left">🥇 4× Debate Champion</div>
-      <div data-aos="fade-right">🏅 2× Best Speaker Award</div>
-      <div data-aos="fade-left">🥇 2× Singing Competition Winner</div>
-      <div data-aos="fade-right">🥇 Football Champion</div>
-      <div data-aos="fade-left">🎖 Parade Commander (8 Years)</div>
-    </div>
+<section id="achievements" class="py-24 px-6">
+  <h2 class="text-3xl font-bold text-center gradient-text mb-16" data-aos="fade-up">Leadership & Achievements</h2>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 text-gray-400">
+    <div data-aos="fade-right">🥇 9× Extempore Speech Champion</div>
+    <div data-aos="fade-left">🥇 4× Debate Champion</div>
+    <div data-aos="fade-right">🏅 2× Best Speaker Award</div>
+    <div data-aos="fade-left">🥇 2× Singing Competition Winner</div>
+    <div data-aos="fade-right">🥇 Football Champion</div>
+    <div data-aos="fade-left">🎖 Parade Commander (8 Years)</div>
   </div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages" class="py-24 bg-gray-900 px-6">
+<h2 class="text-3xl font-bold text-center gradient-text mb-16" data-aos="fade-up">Languages</h2>
+<div class="max-w-5xl mx-auto space-y-8">
+<div data-aos="fade-right"><div class="flex justify-between mb-2"><span>Bangla</span><span class="text-indigo-400">Native</span></div><div class="w-full bg-gray-800 rounded-full h-3"><div class="bg-gradient-to-r from-indigo-500 to-cyan-500 h-3 rounded-full" style="width:100%"></div></div></div>
+<div data-aos="fade-left"><div class="flex justify-between mb-2"><span>English</span><span class="text-indigo-400">Fluent</span></div><div class="w-full bg-gray-800 rounded-full h-3"><div class="bg-gradient-to-r from-indigo-500 to-cyan-500 h-3 rounded-full" style="width:95%"></div></div></div>
+<div data-aos="fade-right"><div class="flex justify-between mb-2"><span>Hindi</span><span class="text-indigo-400">Fluent</span></div><div class="w-full bg-gray-800 rounded-full h-3"><div class="bg-gradient-to-r from-indigo-500 to-cyan-500 h-3 rounded-full" style="width:90%"></div></div></div>
+<div data-aos="fade-left"><div class="flex justify-between mb-2"><span>Urdu</span><span class="text-indigo-400">Fluent</span></div><div class="w-full bg-gray-800 rounded-full h-3"><div class="bg-gradient-to-r from-indigo-500 to-cyan-500 h-3 rounded-full" style="width:88%"></div></div></div>
+<div data-aos="fade-right"><div class="flex justify-between mb-2"><span>Chinese</span><span class="text-indigo-400">Beginner</span></div><div class="w-full bg-gray-800 rounded-full h-3"><div class="bg-gradient-to-r from-indigo-500 to-cyan-500 h-3 rounded-full" style="width:35%"></div></div></div>
+<div data-aos="fade-left"><div class="flex justify-between mb-2"><span>Dutch</span><span class="text-indigo-400">Beginner</span></div><div class="w-full bg-gray-800 rounded-full h-3"><div class="bg-gradient-to-r from-indigo-500 to-cyan-500 h-3 rounded-full" style="width:30%"></div></div></div>
+</div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 bg-gray-900 px-6 text-center">
-  <div class="max-w-xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold gradient-text mb-8">Contact</h2>
-    <p>📍 Tangail, Bangladesh</p>
-    <p>📞 +8801303313212</p>
-    <p>📧 muntasirhasan1023@gmail.com</p>
-  </div>
+<section id="contact" class="py-24 px-6 text-center">
+<h2 class="text-3xl font-bold gradient-text mb-8" data-aos="fade-up">Contact</h2>
+<div class="space-y-3 text-gray-400">
+<p>📍 Tangail, Bangladesh</p>
+<p>📞 +8801303313212</p>
+<p>📧 muntasirhasan1023@gmail.com</p>
+<p><a href="https://wa.me/8801303313212" class="text-green-400">Chat on WhatsApp</a></p>
+<p><a href="https://www.linkedin.com/in/muntasirhasan1023" class="text-blue-400">LinkedIn Profile</a></p>
+</div>
 </section>
 
-<!-- FOOTER -->
 <footer class="py-6 text-center text-gray-500 text-sm">
-  © 2026 Muntasir Hasan. Built with precision.
+© 2026 Muntasir Hasan. Built with precision.
 </footer>
 
-<!-- AOS Script -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
 AOS.init();
 
-// Typing effect
+/* Scroll progress */
+window.onscroll = function() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("progress").style.width = scrolled + "%";
+};
+
+/* Typing effect */
 const text = ["Entrepreneur", "Front-End Developer", "Digital Strategist", "Public Speaker"];
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
+let count = 0, index = 0;
 (function type() {
-  if (count === text.length) { count = 0; }
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
-
-  document.getElementById("typing").textContent = letter;
-  if (letter.length === currentText.length) {
-    count++;
-    index = 0;
+  if(count === text.length) count = 0;
+  let current = text[count];
+  document.getElementById("typing").textContent = current.slice(0, ++index);
+  if(index === current.length){
+    count++; index = 0;
     setTimeout(type, 1000);
-  } else {
-    setTimeout(type, 100);
-  }
+  } else { setTimeout(type, 100); }
 })();
+
+/* Counter animation */
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  counter.innerText = '0';
+  const update = () => {
+    const target = +counter.getAttribute('data-target');
+    const c = +counter.innerText;
+    const increment = target / 50;
+    if(c < target){
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(update, 40);
+    } else { counter.innerText = target; }
+  };
+  update();
+});
 </script>
 
 </body>
